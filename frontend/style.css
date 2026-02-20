@@ -1,0 +1,437 @@
+/* 🌈 General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🎨 Body styles */
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 📦 Auth (Login/Signup) container */
+.auth-container {
+  background: white;
+  padding: 2rem;
+  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.auth-container input:focus {
+  border-color: #4facfe;
+}
+
+.auth-container button {
+  width: 45%;
+  padding: 10px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  background: #4facfe;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-container button:hover {
+  background: #00c6ff;
+}
+/* === Dashboard layout improvements === */
+
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+/* Title */
+h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Wrap all dashboard sections in a column */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Summary Card 
+.summary {
+  background: #fff;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.summary p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #333;
+}
+*/
+/* 🔹 Form container */
+.form {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🔹 Text input, number input, dropdown */
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+/* 🔹 Focus effect */
+.form input:focus,
+.form select:focus {
+  border-color: #4da9ff;
+  box-shadow: 0 0 5px rgba(77, 169, 255, 0.5);
+}
+
+/* 🔹 Add button */
+.form button {
+  width: 100%;
+  background-color: #4da9ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 5px;
+  transition: 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #258eff;
+}
+
+/* 🔹 Transaction list styling */
+#list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#list li {
+  background: #fff;
+  padding: 10px;
+  margin: 8px auto;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#list button {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+/* Add Transaction Card */
+.add-transaction {
+  background: #fff;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+}
+
+.add-transaction input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.add-transaction input:focus {
+  border-color: #4facfe;
+}
+
+.add-transaction button {
+  width: 100%;
+  background: #4facfe;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-transaction button:hover {
+  background: #00c6ff;
+}
+
+/* Transaction List */
+ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+ul li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li button {
+  background: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+ul li button:hover {
+  background: #ff1a1a;
+}
+
+/* Logout Button */
+button[onclick="logout()"] {
+  background: #ff6666;
+  display: block;
+  margin: 25px auto;
+  width: 140px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[onclick="logout()"]:hover {
+  background: #ff3333;
+}
+
+
+/* Transaction input area */
+.add-transaction {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-transaction input {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.add-transaction button {
+  padding: 10px 20px;
+  background: #4facfe;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-transaction button:hover {
+  background: #00c6ff;
+}
+
+/* Transaction list */
+ul {
+  list-style: none;
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 0;
+}
+
+ul li {
+  background: #fff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li button {
+  background: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+ul li button:hover {
+  background: #ff1a1a;
+}
+
+/* Logout button */
+button[onclick="logout()"] {
+  background: #ff6666;
+  display: block;
+  margin: 20px auto;
+  width: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[onclick="logout()"]:hover {
+  background: #ff3333;
+}
+
+/* 🧭 Responsive design */
+@media (max-width: 480px) {
+  .auth-container, .summary, .add-transaction, ul {
+    width: 95%;
+  }
+}
+/* 🔹 Category dropdown */
+.form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* 🔹 Budget container */
+.budget-container {
+  margin-top: 20px;
+  text-align: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.budget-container input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.budget-container button {
+  background-color: #4da9ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.budget-container p {
+  font-weight: bold;
+  color: #333;
+  margin-top: 8px;
+}
+.chart-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+canvas {
+  width: 100% !important;
+  height: 300px !important;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <h2>💰 Expense Tracker</h2>
+
+  <div class="dashboard-container">
+    <div class="summary">
+      <p id="balance">Balance: ₹0</p>
+      <p id="income">Income: ₹0</p>
+      <p id="expense">Expense: ₹0</p>
+    </div>
+
+    <div class="form">
+      <input type="text" id="description" placeholder="Description" />
+      <select id="category">
+        <option value="income">Income</option>
+        <option value="food">Food</option>
+        <option value="rent">Rent</option>
+        <option value="shopping">Shopping</option>
+        <option value="travel">Travel</option>
+        <option value="others">Others</option>
+      </select>
+      <input type="number" id="amount" placeholder="Amount (+/-)" />
+      <button id="addBtn" onclick="addTransaction()">Add</button>
+    </div>
+<!---
+    <div class="budget-container">
+      <input type="number" id="budgetInput" placeholder="Set Monthly Budget (₹)" />
+      <button id="saveBudgetBtn">Save Budget</button>
+      <p id="budgetInfo"></p>
+    </div>
+  -->
+    <ul id="list"></ul>
+  </div>
+  <div class="chart-container">
+  <h3>Spending by Category</h3>
+  <canvas id="categoryChart"></canvas>
+
+  <h3>Income vs Expense</h3>
+  <canvas id="summaryChart"></canvas>
+</div>
+
+  <button onclick="logout()">Logout</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
